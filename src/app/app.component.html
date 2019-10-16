@@ -2,7 +2,8 @@
   <mat-toolbar-row>
     <span>{{title}}</span>
     <span class="example-spacer"></span>
-    <button mat-button [routerLink]="['/edit']"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">person_add</mat-icon>Añadir Empleado</button>
+    <button mat-button [routerLink]="['/employee-add']" *ngIf="router.url != '/employee-add'" ><mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">person_add</mat-icon>Añadir Empleado</button>
+    <button mat-button [routerLink]="['/employee-list']" *ngIf="router.url != '/employee-list'"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">list</mat-icon>Listar Empleado</button>
   </mat-toolbar-row>
   </mat-toolbar>
 

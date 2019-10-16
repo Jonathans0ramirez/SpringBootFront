@@ -15,7 +15,7 @@ export class ListEmployeeComponent implements OnInit {
   displayedColumns: string[] = ['fullName', 'Name', 'ManagerEmail', 'Salario', 'Cargo', 'Direccion', 'Oficina', 'Dependencia', 'Actions'];
 
 
-  constructor(private router: Router, private employeeService: ApiEmployeeService,) { }
+  constructor(private router: Router, private employeeService: ApiEmployeeService) { }
 
   ngOnInit() {
     this.employeeService.getAll().subscribe(data => {

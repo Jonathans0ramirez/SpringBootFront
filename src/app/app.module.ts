@@ -4,7 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MatToolbarModule, MatButtonModule, MatIconModule, MatTableModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSnackBarModule, MatIconModule, MatTableModule, MatCardModule, MatSelectModule, MatFormFieldModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListEmployeeComponent } from './employee/list-employee/list-employee.component';
 import { AddEmployeeComponent } from './employee/add-employee/add-employee.component';
@@ -22,10 +23,15 @@ import { EditEmployeeComponent } from './employee/edit-employee/edit-employee.co
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
+    MatSnackBarModule,
     MatToolbarModule,
     MatButtonModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
