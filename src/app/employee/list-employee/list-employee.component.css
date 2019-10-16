@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+
+th, td, tr, thead {
+    text-align: center !important;
+}
+
+button {
+  margin: 10px 5px;
+}
