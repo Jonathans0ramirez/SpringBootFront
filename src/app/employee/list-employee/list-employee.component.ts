@@ -21,7 +21,7 @@ export class ListEmployeeComponent implements OnInit {
     this.employeeService.getAll().subscribe(data => {
       this.employees = data;
       for (const employee of this.employees) {
-        if(!employee.ownerDni){
+        if(!employee.fullName){
           employee.fullName = "----------";
         } else{
         }
